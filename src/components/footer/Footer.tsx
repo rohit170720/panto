@@ -62,7 +62,7 @@ const Footer = () => {
             <ul className='space-y-2 text-sm'>
               <li className='flex items-center gap-1'>
                 <img
-                  src='./src/assets/facebook.svg'
+                  src='/assets/facebook.svg'
                   className='h-4 w-4'
                   alt='facebook'
                 />
@@ -72,7 +72,7 @@ const Footer = () => {
               </li>
               <li className='flex items-center gap-1'>
                 <img
-                  src='./src/assets/twitter.svg'
+                  src='/assets/twitter.svg'
                   className='h-4 w-4'
                   alt='twitter'
                 />
@@ -82,7 +82,7 @@ const Footer = () => {
               </li>
               <li className='flex items-center gap-1'>
                 <img
-                  src='./src/assets/instagram.svg'
+                  src='/assets/instagram.svg'
                   className='h-4 w-4'
                   alt='instagram'
                 />

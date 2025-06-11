@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    image: "./src/assets/sakarias-armchair.png", // Placeholder image
+    image: "/assets/sakarias-armchair.png", // Placeholder image
     category: "Chair",
     name: "Sakarias Armchair",
     rating: 5,
@@ -9,7 +9,7 @@ export const products = [
   },
   {
     id: 2,
-    image: "./src/assets/balastar-chair.png",
+    image: "/assets/balastar-chair.png",
     category: "Chair",
     name: "Baltsar Chair",
     rating: 4,
@@ -17,7 +17,7 @@ export const products = [
   },
   {
     id: 3,
-    image: "./src/assets/anjay-chair.png",
+    image: "/assets/anjay-chair.png",
     category: "Chair",
     name: "Anjay Chair",
     rating: 5,
@@ -25,7 +25,7 @@ export const products = [
   },
   {
     id: 4,
-    image: "./src/assets/nyantuy-chair.png",
+    image: "/assets/nyantuy-chair.png",
     category: "Chair",
     name: "Nyantuy Chair",
     rating: 4,
@@ -34,7 +34,7 @@ export const products = [
 
   {
     id: 5,
-    image: "./src/assets/sakarias-armchair.png", // Placeholder image
+    image: "/assets/sakarias-armchair.png", // Placeholder image
     category: "Chair",
     name: "Sakarias Armchair",
     rating: 5,
@@ -42,7 +42,7 @@ export const products = [
   },
   {
     id: 6,
-    image: "./src/assets/balastar-chair.png",
+    image: "/assets/balastar-chair.png",
     category: "Chair",
     name: "Baltsar Chair",
     rating: 4,
@@ -60,8 +60,8 @@ export const testimonials = [
     quote:
       "Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal",
     rating: 5,
-    profileImage: "./src/assets/tstmprof-1.png",
-    backgroundImage: "./src/assets/tstmbg-1.jpg",
+    profileImage: "/assets/tstmprof-1.png",
+    backgroundImage: "/assets/tstmbg-1.jpg",
   },
   {
     id: 2,
@@ -70,8 +70,8 @@ export const testimonials = [
     quote:
       "Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah",
     rating: 5,
-    profileImage: "./src/assets/tstmprof-2.png",
-    backgroundImage: "./src/assets/tstmbg-2.jpg",
+    profileImage: "/assets/tstmprof-2.png",
+    backgroundImage: "/assets/tstmbg-2.jpg",
   },
   {
     id: 3,
@@ -79,8 +79,8 @@ export const testimonials = [
     title: "Karyawan Swasta",
     quote: "Sangat terjangkau untuk kantong saya yang tidak terlalu banyak",
     rating: 5,
-    profileImage: "./src/assets/tstmprof-3.png",
-    backgroundImage: "./src/assets/tstmbg-3.jpg",
+    profileImage: "/assets/tstmprof-3.png",
+    backgroundImage: "/assets/tstmbg-3.jpg",
   },
   {
     id: 4,
@@ -89,8 +89,8 @@ export const testimonials = [
     quote:
       "Makasih Panto, aku sekarang berasa tinggal di apartment karena barang-barang yang terlihat mewah",
     rating: 5,
-    profileImage: "./src/assets/tstmprof-2.png",
-    backgroundImage: "./src/assets/tstmbg-2.jpg",
+    profileImage: "/assets/tstmprof-2.png",
+    backgroundImage: "/assets/tstmbg-2.jpg",
   },
   {
     id: 5,
@@ -98,7 +98,7 @@ export const testimonials = [
     title: "Karyawan Swasta",
     quote: "Sangat terjangkau untuk kantong saya yang tidak terlalu banyak",
     rating: 5,
-    profileImage: "./src/assets/tstmprof-3.png",
-    backgroundImage: "./src/assets/tstmbg-3.jpg",
+    profileImage: "/assets/tstmprof-3.png",
+    backgroundImage: "/assets/tstmbg-3.jpg",
   },
 ];

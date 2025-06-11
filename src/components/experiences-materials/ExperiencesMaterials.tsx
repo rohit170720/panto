@@ -3,7 +3,7 @@ function ExperiencesMaterials() {
     <section className='py-12 md:py-36'>
       <div className='flex flex-col md:flex-row md:mt-20 gap-8'>
         <div className='relative min-h-[15rem] md:min-h-[30rem] md:max-w-2/4 h-full w-full '>
-          <div className="absolute top-0 left-8 right-8 md:left-0 md:right-auto md:w-3/4 h-full bg-[url('./src/assets/experiences.jpg')] bg-cover bg-center z-10 shadow-2xl rounded-2xl md:rounded-l-none" />
+          <div className="absolute top-0 left-8 right-8 md:left-0 md:right-auto md:w-3/4 h-full bg-[url('/assets/experiences.jpg')] bg-cover bg-center z-10 shadow-2xl rounded-2xl md:rounded-l-none" />
           <div className='hidden md:block absolute -top-20 left-0 w-1/2 h-full bg-(--ternery-bg) rounded-r-2xl' />
           <div className='hidden md:block absolute top-30 left-30 w-3/4 h-80 bg-(--ternery-bg) rounded-2xl' />
         </div>
@@ -24,7 +24,7 @@ function ExperiencesMaterials() {
           <button className='inline-flex items-center text-sm text-(--custom-orange) hover:text-orange-600 font-light group cursor-pointer '>
             More Info
             <img
-              src='./src/assets/right-arrow.svg'
+              src='/assets/right-arrow.svg'
               alt='Arrow Right'
               className='ml-2  transition-transform duration-200 group-hover:translate-x-1'
             />
@@ -49,7 +49,7 @@ function ExperiencesMaterials() {
             <button className='inline-flex items-center text-sm text-(--custom-orange) hover:text-orange-600 font-light group cursor-pointer '>
               More Info
               <img
-                src='./src/assets/right-arrow.svg'
+                src='/assets/right-arrow.svg'
                 alt='Arrow Right'
                 className='ml-2  transition-transform duration-200 group-hover:translate-x-1'
               />
@@ -61,18 +61,18 @@ function ExperiencesMaterials() {
           <div className='static md:absolute mx-8 md:mx-0 top-0 right-auto md:right-0 left-8 md:left-auto max-w-max md:w-full h-full block md:flex md:gap-8 z-10 md:justify-center md:items-end'>
             <div className='hidden md:flex flex-col gap-4  h-full p-4'>
               <img
-                src='./src/assets/materials-1.jpg'
+                src='/assets/materials-1.jpg'
                 alt='Materials'
                 className='w-56 h-56 object-cover rounded-2xl shadow-2xl'
               />
               <img
-                src='./src/assets/materials-2.jpg'
+                src='/assets/materials-2.jpg'
                 alt='Materials'
                 className='w-56 h-80 object-cover rounded-2xl shadow-2xl'
               />
             </div>
             <img
-              src='./src/assets/materials-3.jpg'
+              src='/assets/materials-3.jpg'
               alt='Materials'
               className='w-full  max-h-none md:max-h-[27rem] object-cover rounded-2xl md:rounded-r-none shadow-2xl md:mb-10'
             />

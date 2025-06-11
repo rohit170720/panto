@@ -3,7 +3,7 @@ import { useState } from "react";
 const CartIcon = ({ cartItemsLength }: { cartItemsLength: number }) => (
   <div className='relative'>
     <img
-      src='./src/assets/bag.svg'
+      src={"/assets/Bag.svg"}
       alt='Cart icon'
       className='w-8 h-8 rounded-full'
     />

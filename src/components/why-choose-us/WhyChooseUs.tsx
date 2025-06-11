@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
               <button className='inline-flex items-center text-sm text-(--custom-orange) hover:text-orange-600 font-light group cursor-pointer '>
                 More Info
                 <img
-                  src='./src/assets/right-arrow.svg'
+                  src='/assets/right-arrow.svg'
                   alt='Arrow Right'
                   className='ml-2  transition-transform duration-200 group-hover:translate-x-1'
                 />

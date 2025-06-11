@@ -115,7 +115,7 @@ const BestSellingProducts = () => {
           <button className='inline-flex items-center text-lg text-(--custom-orange) hover:text-orange-600 font-light group cursor-pointer '>
             View More
             <img
-              src='./src/assets/right-arrow.svg'
+              src='/assets/right-arrow.svg'
               alt='Arrow Right'
               className='ml-2 transition-transform duration-200 group-hover:translate-x-1'
             />
