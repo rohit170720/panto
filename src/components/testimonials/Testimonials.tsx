@@ -21,7 +21,7 @@ function Testimonials() {
   };
 
   return (
-    <section className=' py-10 md:px-8 lg:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+    <section className='py-10 md:px-8 lg:py-16 xl:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
       <div className='w-full text-center mb-4'>
         <h5 className='text-sm md:text-lg text-(--custom-orange) font-semibold tracking-[0.17em] '>
           TESTIMONIALS
@@ -34,7 +34,7 @@ function Testimonials() {
       <div className='relative'>
         {/* Navigation Arrows */}
         <button
-          className='absolute left:0 md:-left-6 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 z-10 flex items-center justify-center border border-gray-200 cursor-pointer'
+          className='absolute left:0 md:-left-6 top-1/4  bg-white p-3 rounded-full shadow-md hover:bg-gray-100 z-10 flex items-center justify-center border border-gray-200 cursor-pointer'
           onClick={() => navigation("left")}
         >
           {/* Left Arrow SVG */}
@@ -55,17 +55,16 @@ function Testimonials() {
         </button>
 
         <div
-          className='flex overflow-y-hidden gap-4 py-4 scrollbar-hide'
+          className='flex overflow-y-hidden gap-4 pt-4 pb-15 scrollbar-hide'
           ref={carouselContainer}
         >
           {testimonials.map((testimonial) => (
-            // <ProductCard key={product.id} product={product as Product} />
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>
 
         <button
-          className='absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 z-10 flex items-center justify-center border border-gray-200 cursor-pointer'
+          className='absolute right-0 md:-right-6 top-1/4 bg-white p-3 rounded-full shadow-md hover:bg-gray-100 z-10 flex items-center justify-center border border-gray-200 cursor-pointer'
           onClick={() => navigation("right")}
         >
           {/* Right Arrow SVG */}

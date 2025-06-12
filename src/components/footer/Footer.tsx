@@ -97,7 +97,7 @@ const Footer = () => {
         {/* Separator Line */}
 
         {/* Bottom Section: Copyright and Legal Links */}
-        <div className='flex flex-col sm:flex-row justify-between items-center text-sm mt-4'>
+        <div className='flex flex-col sm:flex-row justify-between items-center text-sm mt-4 md:mt-8'>
           <p className='mb-4 sm:mb-0'>Copyright © {new Date().getFullYear()}</p>
           <div className='flex space-x-6'>
             <a href='#' className='hover:text-gray-900'>

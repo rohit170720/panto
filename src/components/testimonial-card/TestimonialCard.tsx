@@ -19,7 +19,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div
-      className={`bg-cover bg-center rounded-lg shadow-sm overflow-hidden border border-gray-100 p-4 pb-0 flex flex-col justify-between transform transition duration-300 hover:scale-[1.02] !min-w-full  sm:!min-w-[calc(50%_-_0.5rem)]  md:!min-w-[calc(33%_-_0.66rem)] min-h-[25rem] relative`}
+      className={`bg-cover bg-center rounded-lg   shadow-2xl border border-gray-100 p-4 pb-0 flex flex-col justify-between transform transition duration-300 hover:scale-[1.02] !min-w-full  sm:!min-w-[calc(50%_-_0.5rem)]  md:!min-w-[calc(33%_-_0.66rem)] min-h-[25rem] relative`}
       style={{ backgroundImage: `url('${testimonial.backgroundImage}')` }}
     >
       <div className='absolute bottom-4 left-4 right-4'>
