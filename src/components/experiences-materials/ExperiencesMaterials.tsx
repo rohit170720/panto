@@ -58,7 +58,7 @@ function ExperiencesMaterials() {
         </div>
 
         <div className='relative min-h-[15rem] md:min-h-[35rem] h-full w-full '>
-          <div className='static md:absolute mx-8 md:mx-0 top-0 right-auto md:right-0 left-8 md:left-auto max-w-max md:w-full h-full block md:flex md:gap-8 z-10 md:justify-center md:items-end'>
+          <div className='static md:absolute mx-8 md:mx-0 top-0 right-auto md:right-0 left-8 md:left-auto md:max-w-max md:w-full h-full block md:flex md:gap-8 z-10 md:justify-center md:items-end'>
             <div className='hidden lg:flex flex-col gap-4  h-full p-4'>
               <img
                 src='/assets/materials-1.jpg'
@@ -74,7 +74,7 @@ function ExperiencesMaterials() {
             <img
               src='/assets/materials-3.jpg'
               alt='Materials'
-              className='w-full  max-h-none md:max-h-[27rem] object-cover rounded-2xl md:rounded-r-none shadow-2xl md:mb-10'
+              className='w-full  max-h-60 md:max-h-[27rem] object-cover rounded-2xl md:rounded-r-none shadow-2xl md:mb-10'
             />
           </div>
           <div className='hidden md:block absolute -top-20 right-0 w-1/3 h-full bg-(--ternery-bg) rounded-l-2xl' />

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { categories } from "../../constants";
+import { useCart } from "../../context/CartContext";
 
 const CartIcon = ({ cartItemsLength }: { cartItemsLength: number }) => (
   <div className='relative'>
@@ -16,6 +18,8 @@ const CartIcon = ({ cartItemsLength }: { cartItemsLength: number }) => (
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isFurnitureDropdownOpen, setIsFurnitureDropdownOpen] = useState(false);
+
+  const { counter } = useCart();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -85,29 +89,18 @@ const Header = () => {
                 id='furniture-dropdown'
                 role='menu'
                 aria-labelledby='furniture-link'
-                className='absolute bg-(--search-bg) text-white mt-2 space-y-2 py-2 rounded shadow-lg z-10 w-48'
+                className='absolute bg-(--search-bg) backdrop-blur-sm text-white mt-2 space-y-1 py-2 rounded shadow-lg z-10 w-48'
               >
-                <a
-                  href='#'
-                  role='menuitem'
-                  className='block px-4 py-2 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:bg-gray-600'
-                >
-                  Sofas
-                </a>
-                <a
-                  href='#'
-                  role='menuitem'
-                  className='block px-4 py-2 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:bg-gray-600'
-                >
-                  Chairs
-                </a>
-                <a
-                  href='#'
-                  role='menuitem'
-                  className='block px-4 py-2 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:bg-gray-600'
-                >
-                  Tables
-                </a>
+                {categories.map((category, ind) => (
+                  <a
+                    href='#'
+                    role='menuitem'
+                    className='block px-4 py-2 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:bg-gray-600'
+                    key={`${category}-${ind}`}
+                  >
+                    {category}
+                  </a>
+                ))}
               </div>
             )}
           </div>
@@ -138,7 +131,7 @@ const Header = () => {
             className='relative focus:outline-none focus:ring-2 focus:ring-gray-400 rounded-full'
             aria-label='Shopping Cart'
           >
-            <CartIcon cartItemsLength={0} />
+            <CartIcon cartItemsLength={counter} />
           </a>
 
           {/* Hamburger menu for mobile */}

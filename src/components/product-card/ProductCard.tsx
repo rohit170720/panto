@@ -1,3 +1,5 @@
+import { memo } from "react";
+import { useCart } from "../../context/CartContext";
 import type { Product } from "../../types/types";
 
 const renderStars = (rating: number) => {
@@ -20,7 +22,8 @@ const renderStars = (rating: number) => {
   );
 };
 
-function ProductCard({ product }: { product: Product }) {
+const ProductCard = memo(function ({ product }: { product: Product }) {
+  const { counter, setCounter } = useCart();
   return (
     <div className='bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 p-4 pb-0 flex flex-col justify-between transform transition duration-300 hover:scale-[1.02] !min-w-full  sm:!min-w-[calc(50%_-_0.5rem)]  md:!min-w-[calc(33%_-_0.66rem)] lg:!min-w-[calc(25%_-_0.75rem)]'>
       <div className='flex justify-center items-center h-64 mb-4'>
@@ -40,7 +43,10 @@ function ProductCard({ product }: { product: Product }) {
           <span className='text-xl font-bold text-gray-900'>
             ${product.price}
           </span>
-          <button className='bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-900 transition duration-300 cursor-pointer'>
+          <button
+            className='bg-gray-800 text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-900 transition duration-300 cursor-pointer'
+            onClick={() => setCounter(counter + 1)}
+          >
             {/* Plus Icon SVG */}
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -61,6 +67,6 @@ function ProductCard({ product }: { product: Product }) {
       </div>
     </div>
   );
-}
+});
 
 export default ProductCard;
