@@ -1,6 +1,6 @@
 function ExperiencesMaterials() {
   return (
-    <section className='py-12 md:py-36'>
+    <section className='py-12 md:py-36 overflow-x-hidden'>
       <div className='flex flex-col md:flex-row md:mt-20 gap-8'>
         <div className='relative min-h-[15rem] md:min-h-[30rem] md:max-w-2/4 h-full w-full '>
           <div className="absolute top-0 left-8 right-8 md:left-0 md:right-auto md:w-3/4 h-full bg-[url('/assets/experiences.jpg')] bg-cover bg-center z-10 shadow-2xl rounded-2xl md:rounded-l-none" />
@@ -59,7 +59,7 @@ function ExperiencesMaterials() {
 
         <div className='relative min-h-[15rem] md:min-h-[35rem] h-full w-full '>
           <div className='static md:absolute mx-8 md:mx-0 top-0 right-auto md:right-0 left-8 md:left-auto max-w-max md:w-full h-full block md:flex md:gap-8 z-10 md:justify-center md:items-end'>
-            <div className='hidden md:flex flex-col gap-4  h-full p-4'>
+            <div className='hidden lg:flex flex-col gap-4  h-full p-4'>
               <img
                 src='/assets/materials-1.jpg'
                 alt='Materials'

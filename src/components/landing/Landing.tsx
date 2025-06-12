@@ -1,9 +1,15 @@
-import BestSellingProducts from "../best-selling-products/BestSellingProducts";
+import { lazy } from "react";
 import ExperiencesMaterials from "../experiences-materials/ExperiencesMaterials";
 import Header from "../header/Header";
 import HeroBanner from "../hero-section/HeroBanner";
-import Testimonials from "../testimonials/Testimonials";
+
 import WhyChooseUs from "../why-choose-us/WhyChooseUs";
+
+const BestSellingProducts = lazy(
+  () => import("../best-selling-products/BestSellingProducts")
+);
+
+const Testimonials = lazy(() => import("../testimonials/Testimonials"));
 
 function Landing() {
   return (

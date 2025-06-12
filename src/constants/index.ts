@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    image: "/assets/sakarias-armchair.png", // Placeholder image
+    image: "/assets/sakarias-armchair.png",
     category: "Chair",
     name: "Sakarias Armchair",
     rating: 5,
@@ -34,8 +34,7 @@ export const products = [
 
   {
     id: 5,
-    image: "/assets/sakarias-armchair.png", // Placeholder image
-    category: "Chair",
+    image: "/assets/sakarias-armchair.png",
     name: "Sakarias Armchair",
     rating: 5,
     price: 342,
@@ -100,5 +99,26 @@ export const testimonials = [
     rating: 5,
     profileImage: "/assets/tstmprof-3.png",
     backgroundImage: "/assets/tstmbg-3.jpg",
+  },
+];
+
+export const features = [
+  {
+    title: "Luxury facilities",
+    description:
+      "The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.",
+    link: "#",
+  },
+  {
+    title: "Affordable Price",
+    description:
+      "You can get a workspace of the highst quality at an affordable price and still enjoy the facilities that are oly here.",
+    link: "#",
+  },
+  {
+    title: "Many Choices",
+    description:
+      "We provide many unique work space choices so that you can choose the workspace to your liking.",
+    link: "#",
   },
 ];
