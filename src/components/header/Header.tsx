@@ -9,7 +9,7 @@ const CartIcon = ({ cartItemsLength }: { cartItemsLength: number }) => (
       alt='Cart icon'
       className='w-8 h-8 rounded-full'
     />
-    <span className='absolute top-0 right-0 bg-red-500 text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center'>
+    <span className='absolute top-0 right-0 bg-(--custom-orange) text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center'>
       {cartItemsLength || 0}
     </span>
   </div>
